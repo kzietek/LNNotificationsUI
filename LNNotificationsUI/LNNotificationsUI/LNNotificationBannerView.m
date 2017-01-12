@@ -132,13 +132,10 @@ static const CGFloat LNNotificationRelativeLabelCollapse = 5.0 * 60.0;
 		_appIcon.layer.borderWidth = 1 / [UIScreen mainScreen].scale;
 		_appIcon.layer.borderColor = [[UIColor blackColor] colorWithAlphaComponent:0.2].CGColor;
 		_appIcon.translatesAutoresizingMaskIntoConstraints = NO;
-		
-		[_appIcon addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[_appIcon(20)]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_appIcon)]];
-		[_appIcon addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_appIcon(20)]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_appIcon)]];
-		
-		[_notificationContentView addSubview:_appIcon];
-		
-		[_notificationContentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-7.5-[_appIcon]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_appIcon)]];
+        [_appIcon addConstraint:[NSLayoutConstraint constraintWithItem:_appIcon attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:_appIcon attribute:NSLayoutAttributeHeight multiplier:1.0 constant:0]];
+        
+        [_notificationContentView addSubview:_appIcon];
+        [_notificationContentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-7.5-[_appIcon]-7.5-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_appIcon)]];
 		
 		_titleLabel = [UILabel new];
 		_titleLabel.font = [UIFont boldSystemFontOfSize:13];
