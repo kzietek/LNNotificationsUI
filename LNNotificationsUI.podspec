@@ -28,8 +28,8 @@ Pod::Spec.new do |s|
                   LNNotificationsUI is a framework for displaying notifications similar to Apple's iOS 8 and iOS 9 notifications. It is meant to complement the native look and feel, by providing a pixel-accurate (as much as possible) recreation of the notifications.
                    DESC
 
-  s.homepage     = "https://github.com/MaciejGad/LNNotificationsUI"
-  s.screenshots  = "https://raw.githubusercontent.com/MaciejGad/LNNotificationsUI/master/Screenshots/Presentation.png", "https://raw.githubusercontent.com/MaciejGad/LNNotificationsUI/master/Screenshots/LNNotificationsUI.gif"
+  s.homepage     = "https://github.com/kzietek/LNNotificationsUI"
+  s.screenshots  = "https://raw.githubusercontent.com/kzietek/LNNotificationsUI/master/Screenshots/Presentation.png", "https://raw.githubusercontent.com/kzietek/LNNotificationsUI/master/Screenshots/LNNotificationsUI.gif"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -77,7 +77,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/MaciejGad/LNNotificationsUI.git", :tag => "v0.1" }
+  s.source       = { :git => "https://github.com/kzietek/LNNotificationsUI.git", :tag => "v0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
